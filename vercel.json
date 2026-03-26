@@ -3,6 +3,66 @@
     {
       "source": "/",
       "destination": "/pages/home.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/pages/about.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html"
+    },
+    {
+      "source": "/article",
+      "destination": "/pages/article.html"
+    },
+    {
+      "source": "/service/cv",
+      "destination": "/pages/details/services/1.html"
+    },
+    {
+      "source": "/service/pt-perorangan",
+      "destination": "/pages/details/services/2.html"
+    },
+    {
+      "source": "/service/pt-umkm",
+      "destination": "/pages/details/services/3.html"
+    },
+    {
+      "source": "/service/pt-non-umkm",
+      "destination": "/pages/details/services/4.html"
+    },
+    {
+      "source": "/service/pt-pma",
+      "destination": "/pages/details/services/5.html"
+    },
+    {
+      "source": "/service/yayasan",
+      "destination": "/pages/details/services/6.html"
+    },
+    {
+      "source": "/service/koperasi",
+      "destination": "/pages/details/services/7.html"
+    },
+    {
+      "source": "/service/organisasi-perkumpulan",
+      "destination": "/pages/details/services/8.html"
+    },
+    {
+      "source": "/service/laporan-pajak",
+      "destination": "/pages/details/services/9.html"
+    },
+    {
+      "source": "/service/haki",
+      "destination": "/pages/details/services/10.html"
+    },
+    {
+      "source": "/service/sbujk",
+      "destination": "/pages/details/services/11.html"
+    },
+    {
+      "source": "/service/iso-9001",
+      "destination": "/pages/details/services/12.html"
     }
   ]
 }

@@ -5,19 +5,19 @@
       "destination": "/pages/home.html"
     },
     {
-      "source": "/about.com",
+      "source": "/about.html",
       "destination": "/pages/about.html"
     },
     {
-      "source": "/contact.com",
+      "source": "/contact.html",
       "destination": "/pages/contact.html"
     },
     {
-      "source": "/service.com",
+      "source": "/service.html",
       "destination": "/pages/service.html"
     },
     {
-      "source": "/article.com",
+      "source": "/article.html",
       "destination": "/pages/article.html"
     },
     {

@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <nav
+      class="fixed top-0 left-0 w-full z-50 font-mon transition-all duration-500 ease-in-out"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-6 md:px-16">
+        <div class="flex items-center justify-between h-20">
+          <div class="h-20 w-32 md:w-36 flex items-center">
+            <img
+              id="navLogo"
+              src="../../../assets/oerusin.png"
+              class="h-full w-full object-contain transition-all duration-300"
+              alt="Logo"
+            />
+          </div>
+
+          <ul
+            id="navMenu"
+            class="hidden lg:flex items-center gap-8 text-white font-bold transition-all duration-300"
+          >
+            <li><a href="../../home.html" class="text-yellow-400">Home</a></li>
+            <li>
+              <a href="../../about.html" class="hover:text-yellow-400"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a href="../../service.html" class="hover:text-yellow-400"
+                >Layanan</a
+              >
+            </li>
+            <li>
+              <a href="../../article.html" class="hover:text-yellow-400"
+                >Artikel</a
+              >
+            </li>
+            <li>
+              <a href="../../contact.html" class="hover:text-yellow-400"
+                >Kontak Kami</a
+              >
+            </li>
+            <li class="flex gap-2 ml-4">
+              <img
+                src="https://flagcdn.com/w40/id.png"
+                class="h-4 w-6 cursor-pointer border border-gray-800"
+              />
+              <img
+                src="https://flagcdn.com/w40/gb.png"
+                class="h-4 w-6 cursor-pointer border border-gray-800"
+              />
+              <img
+                src="https://flagcdn.com/w40/cn.png"
+                class="h-4 w-6 cursor-pointer border border-gray-800"
+              />
+            </li>
+          </ul>
+
+          <div class="lg:hidden flex items-center">
+            <button
+              id="mobileMenuBtn"
+              class="text-white focus:outline-none p-2 transition-colors duration-300"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  id="hamburgerIcon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="sidebar"
+      class="fixed inset-0 z-[60] invisible opacity-0 transition-all duration-300 lg:hidden"
+    >
+      <div
+        id="closeSidebar"
+        class="absolute inset-0 bg-black/60 backdrop-blur-sm"
+      ></div>
+
+      <div
+        id="sidebarContent"
+        class="absolute right-0 top-0 w-[280px] h-full bg-[#215E61] shadow-2xl transform translate-x-full transition-transform duration-500 flex flex-col p-8"
+      >
+        <div class="flex justify-between items-center mb-10">
+          <img
+            src="../../../assets/oerusin.png"
+            class="h-10 w-auto object-contain"
+            alt="Logo"
+          />
+          <button id="closeSidebarBtn" class="text-white hover:text-yellow-400">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="flex flex-col gap-6 text-white text-lg font-bold">
+          <li><a href="../../home.html" class="text-yellow-400">Home</a></li>
+          <li>
+            <a href="/about" class="hover:text-yellow-400 transition-all"
+              >Tentang</a
+            >
+          </li>
+          <li>
+            <a href="/service" class="hover:text-yellow-400 transition-all"
+              >Layanan</a
+            >
+          </li>
+          <li>
+            <a href="/article" class="hover:text-yellow-400 transition-all"
+              >Artikel</a
+            >
+          </li>
+          <li>
+            <a href="/contact" class="hover:text-yellow-400 transition-all"
+              >Kontak Kami</a
+            >
+          </li>
+        </ul>
+
+        <div class="mt-auto pt-8 border-t border-white/10">
+          <p class="text-white/40 text-xs mb-4 tracking-widest uppercase">
+            Pilih Bahasa
+          </p>
+          <div class="flex gap-4">
+            <img
+              src="https://flagcdn.com/w40/id.png"
+              class="h-5 w-8 rounded shadow-md"
+            />
+            <img
+              src="https://flagcdn.com/w40/gb.png"
+              class="h-5 w-8 rounded shadow-md"
+            />
+            <img
+              src="https://flagcdn.com/w40/cn.png"
+              class="h-5 w-8 rounded shadow-md"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      class="relative min-h-[50vh] md:h-[60vh] flex items-center justify-center text-center text-white overflow-hidden"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1469114182292-14c05db80456?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-[#215E61]/90 via-black/70 to-[#FE7F2D]/80"
+      ></div>
+
+      <div class="relative z-10 max-w-3xl px-6 py-12">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 leading-tight"
+        >
+          Bikin PT Semakin Mudah dengan Peraturan Baru Pemerintah!
+        </h1>
+        <p
+          class="mt-4 text-base md:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed"
+        >
+          Mudahnya Bikin PT
+        </p>
+      </div>
+    </section>
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="flex items-center gap-3 mb-6">
+          <span
+            class="px-3 py-1 rounded-full bg-[#215E61]/10 text-[#215E61] text-xs font-bold uppercase tracking-wider"
+          >
+            Legalitas
+          </span>
+        </div>
+
+        <h1
+          class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight"
+        >
+          Bikin PT Semakin Mudah dengan Peraturan Baru Pemerintah!
+        </h1>
+
+        <p
+          class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed italic border-l-4 border-[#FE7F2D] pl-6"
+        >
+          Mudahnya Bikin PT
+        </p>
+
+        <div class="relative group mb-12">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-[#215E61] to-[#FE7F2D] rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"
+          ></div>
+          <img
+            src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="relative w-full h-[300px] md:h-[500px] object-cover rounded-2xl shadow-2xl"
+          />
+        </div>
+
+        <div
+          class="prose prose-lg max-w-none prose-headings:text-[#215E61] prose-headings:font-black prose-p:text-gray-600 prose-p:leading-relaxed prose-strong:text-gray-900 prose-strong:font-bold"
+        >
+          <div
+            class="bg-gray-50 border-l-4 border-[#FE7F2D] p-8 mb-10 rounded-r-3xl shadow-sm"
+          >
+            <p class="m-0 leading-relaxed text-gray-700">
+              Peraturan Pemerintah No. 8 Tahun 2021 tentang Modal Dasar
+              Perseroan serta Pendaftaran Pendirian, Perubahan, dan Pembubaran
+              Perseroan yang Memenuhi Kriteria Untuk Usaha Mikro dan Kecil resmi
+              diteken oleh pemerintah bulan lalu. PP ini merupakan turunan dan
+              aturan pendukung dari UU Cipta Kerja yang sudah lebih dulu
+              disahkan tahun lalu.
+            </p>
+          </div>
+
+          <p>
+            PP No. 8 Tahun 2021 merupakan salah satu bentuk dukungan pemerintah
+            untuk program kemudahan dalam berusaha (ease of doing business) di
+            Indonesia. Dengan berlakunya PP ini maka terdapat berbagai aturan
+            mengenai Perseroan Terbatas (PT) yang berubah. Salah satunya adalah
+            adanya penyederhanaan persyaratan dalam pendirian PT. Untuk
+            mengetahui lebih lanjut apa saja perubahannya, yuk simak penjelasan
+            berikut.
+          </p>
+
+          <h2 class="text-2xl font-bold mt-12 mb-6 text-[#215E61]">
+            Definisi Perseroan Terbatas
+          </h2>
+          <p>
+            Dalam PP No.8 Tahun 2021, perseroan terbatas kini memiliki
+            pengertian sebagai badan hukum yang merupakan persekutuan modal,
+            didirikan berdasarkan perjanjian, melakukan kegiatan usaha dengan
+            modal dasar yang seluruhnya terbagi dalam saham atau badan hukum
+            perorangan yang memenuhi kriteria usaha mikro dan kecil.
+          </p>
+
+          <p>
+            Jika membandingkan dengan pengertian PT dalam UU No. 40 tahun 2007
+            maka terdapat tambahan badan usaha yang dapat dijadikan PT, yaitu
+            perusahaan perorangan yang memenuhi kriteria usaha mikro dan kecil.
+            Perseroan yang memenuhi kriteria untuk usaha mikro dan kecil yang
+            dimaksud terdiri atas perseroan yang didirikan oleh dua orang atau
+            lebih dan perseroan perorangan yang didirikan oleh satu orang.
+            Dengan adanya aturan ini, pelaku usaha perorangan yang belum
+            memiliki usaha dengan sekala besar tetap dapat memperoleh status
+            sebagai badan hukum lho.
+          </p>
+
+          <h2 class="text-2xl font-bold mt-12 mb-6 text-[#215E61]">
+            Kemudahan Modal & Syarat Pendirian
+          </h2>
+          <p>
+            PP ini juga menyebutkan bahwa besaran modal dasar perseroan dapat
+            ditentukan berdasarkan keputusan pendiri perseroan. Artinya sudah
+            tidak ada lagi modal dasar yang harus dipenuhi oleh pendiri seperti
+            yang diatur dalam UUPT sebelumnya. PP No. 8 Tahun 2021 juga
+            mempermudah pendirian PT dengan cara menyederhanakan syarat
+            pendiriannya.
+          </p>
+
+          <p>
+            Dalam aturan ini, PT yang berbentuk perseroan perorangan dapat
+            didirikan oleh WNI yang sudah berusia 17 tahun dan cakap hukum.
+            Pendiri perseroan juga hanya perlu mengisi pernyataan pendirian
+            dalam bahasa Indonesia.
+          </p>
+
+          <div
+            class="bg-white border border-gray-100 rounded-2xl p-8 my-10 shadow-md"
+          >
+            <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+              <span class="w-2 h-6 bg-[#FE7F2D] rounded-full"></span>
+              Pernyataan pendirian harus memuat:
+            </h3>
+            <ul
+              class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 list-none pl-0"
+            >
+              <li
+                class="flex items-start gap-3 text-sm border-b border-gray-50 pb-2"
+              >
+                <span class="font-bold text-[#215E61]">1.</span> Nama dan tempat
+                kedudukan perseroan perorangan.
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm border-b border-gray-50 pb-2"
+              >
+                <span class="font-bold text-[#215E61]">2.</span> Jangka waktu
+                berdirinya perseroan perorangan.
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm border-b border-gray-50 pb-2"
+              >
+                <span class="font-bold text-[#215E61]">3.</span> Maksud dan
+                tujuan serta kegiatan usaha perseroan perorangan.
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm border-b border-gray-50 pb-2"
+              >
+                <span class="font-bold text-[#215E61]">4.</span> Jumlah modal
+                dasar, modal ditempatkan, dan modal disetor.
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm border-b border-gray-50 pb-2"
+              >
+                <span class="font-bold text-[#215E61]">5.</span> Nilai nominal
+                dan jumlah saham.
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm border-b border-gray-50 pb-2"
+              >
+                <span class="font-bold text-[#215E61]">6.</span> Alamat
+                perseroan perorangan.
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm border-b border-gray-50 pb-2 col-span-1 md:col-span-2"
+              >
+                <span class="font-bold text-[#215E61]">7.</span> Nama lengkap,
+                tempat dan tanggal lahir, pekerjaan, tempat tinggal, nomor induk
+                kependudukan, dan nomor pokok wajib pajak dari pendiri sekaligus
+                direktur dan pemegang saham perseroan perorangan.
+              </li>
+            </ul>
+          </div>
+
+          <h2 class="text-2xl font-bold mt-12 mb-6 text-[#215E61]">
+            Status Badan Hukum Elektronik
+          </h2>
+          <p>
+            Perseroan perorangan akan memperoleh status badan hukum setelah
+            mendaftarkan pernyataan pendirian dan mendapatkan sertifikat
+            pendaftaran secara elektronik. Karena hanya perlu mendaftar secara
+            elektronik, perusahaan perseorangan/PT dengan kriteria UMKM tidak
+            lagi memerlukan akta notaris dalam pendiriannya. Hal inilah yang
+            membuat PT kini bisa didirikan tanpa notaris.
+          </p>
+
+          <p>
+            Perseroan perorangan yang telah memperoleh status badan hukum akan
+            diumumkan dalam laman resmi Direktorat Jenderal Administrasi Hukum
+            Umum (Ditjen AHU) Kementerian Hukum dan HAM. Sebagai bentuk
+            penyederhanaan birokrasi, pelaku usaha juga dibebaskan dari
+            kewajiban untuk mengumumkan pendirian PT nya dalam Tambahan Berita
+            Negara.
+          </p>
+
+          <div
+            class="mt-12 p-6 bg-amber-50 rounded-2xl border border-amber-200 text-sm text-amber-900 leading-relaxed"
+          >
+            <strong>Penting untuk diingat:</strong> Bahwa ketentuan diatas hanya
+            berlaku untuk PT dengan kriteria UMKM atau perusahaan perseorangan.
+            Ketika perusahaan perseorangan mengalami perubahan dalam hal
+            pemegang saham menjadi lebih dari satu orang dan/atau tidak lagi
+            memenuhi kriteria sebagai UMKM, maka perseroan perorangan tersebut
+            harus mengubah status badan hukumnya menjadi perseroan, hal ini
+            diatur dalam Pasal 9 PP No. 8 Tahun 2021. Selain itu, perubahan
+            status ke perseroan harus dilakukan dengan akta notaris dan
+            didaftarkan secara elektronik kepada Menteri Hukum dan HAM melalui
+            Ditjen AHU.
+          </div>
+
+          <div class="mt-16 pt-8 border-t border-gray-200">
+            <div class="flex flex-col gap-2">
+              <span
+                class="text-xs font-bold text-gray-400 uppercase tracking-widest"
+                >Referensi & Sumber:</span
+              >
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="https://kumparan.com/marketing-kontrakhukum/bikin-pt-semakin-mudah-dengan-peraturan-baru-pemerintah-1vNBfStQqSo"
+                  target="_blank"
+                  class="flex items-center gap-2 text-sm text-[#215E61] hover:text-[#FE7F2D] no-underline font-semibold group"
+                >
+                  <svg
+                    class="w-4 h-4 transition-transform group-hover:translate-y-[-2px]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    ></path>
+                  </svg>
+                  Kumparan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a
+      href="https://wa.me/6287811212001"
+      target="_blank"
+      class="group fixed bottom-6 right-6 z-50"
+    >
+      <div
+        class="flex items-center gap-3 bg-[#25D366] text-white px-5 py-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+      >
+        <!-- ICON -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="Capa_1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 24 24"
+          style="enable-background: new 0 0 24 24"
+          xml:space="preserve"
+          width="25"
+          height="25"
+        >
+          <g id="WA_Logo">
+            <g>
+              <path
+                style="fill-rule: evenodd; clip-rule: evenodd"
+                d="M20.463,3.488C18.217,1.24,15.231,0.001,12.05,0    C5.495,0,0.16,5.334,0.157,11.892c-0.001,2.096,0.547,4.142,1.588,5.946L0.057,24l6.304-1.654    c1.737,0.948,3.693,1.447,5.683,1.448h0.005c6.554,0,11.89-5.335,11.893-11.893C23.944,8.724,22.708,5.735,20.463,3.488z     M12.05,21.785h-0.004c-1.774,0-3.513-0.477-5.031-1.378l-0.361-0.214l-3.741,0.981l0.999-3.648l-0.235-0.374    c-0.99-1.574-1.512-3.393-1.511-5.26c0.002-5.45,4.437-9.884,9.889-9.884c2.64,0,5.122,1.03,6.988,2.898    c1.866,1.869,2.893,4.352,2.892,6.993C21.932,17.351,17.498,21.785,12.05,21.785z M17.472,14.382    c-0.297-0.149-1.758-0.868-2.031-0.967c-0.272-0.099-0.47-0.149-0.669,0.148s-0.767,0.967-0.941,1.166    c-0.173,0.198-0.347,0.223-0.644,0.074c-0.297-0.149-1.255-0.462-2.39-1.475c-0.883-0.788-1.48-1.761-1.653-2.059    s-0.018-0.458,0.13-0.606c0.134-0.133,0.297-0.347,0.446-0.521C9.87,9.97,9.919,9.846,10.019,9.647    c0.099-0.198,0.05-0.372-0.025-0.521C9.919,8.978,9.325,7.515,9.078,6.92c-0.241-0.58-0.486-0.501-0.669-0.51    C8.236,6.401,8.038,6.4,7.839,6.4c-0.198,0-0.52,0.074-0.792,0.372c-0.272,0.298-1.04,1.017-1.04,2.479    c0,1.463,1.065,2.876,1.213,3.074c0.148,0.198,2.095,3.2,5.076,4.487c0.709,0.306,1.263,0.489,1.694,0.626    c0.712,0.226,1.36,0.194,1.872,0.118c0.571-0.085,1.758-0.719,2.006-1.413c0.248-0.694,0.248-1.29,0.173-1.413    C17.967,14.605,17.769,14.531,17.472,14.382z"
+              />
+            </g>
+          </g>
+        </svg>
+        <!-- TEXT -->
+        <span class="hidden md:block font-medium"> Konsultasi WhatsApp </span>
+      </div>
+    </a>
+
+    <div class="relative max-w-7xl mx-auto px-6 mt-10 mb-10 z-20">
+      <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+        <img
+          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div
+          class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-[#215E61]/95 via-[#0f2f31]/90 to-[#FE7F2D]/80"
+        ></div>
+
+        <div
+          class="relative grid lg:grid-cols-2 items-center gap-10 px-6 py-12 md:px-12 md:py-14"
+        >
+          <div class="text-center lg:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-or">
+              Konsultasikan Legalitas Bisnis Anda Sekarang
+            </h2>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="/contact"
+                class="bg-yellow-500 text-[#215E61] px-8 py-4 rounded-xl font-bold text-center hover:bg-yellow-400 transition-all active:scale-95 shadow-lg shadow-yellow-600/20"
+              >
+                Hubungi Kami →
+              </a>
+              <a
+                href="/service"
+                class="border border-white/40 px-8 py-4 rounded-xl text-center hover:bg-white/10 transition-all text-white active:scale-95 backdrop-blur-sm"
+              >
+                Lihat Layanan
+              </a>
+            </div>
+          </div>
+
+          <div class="hidden lg:block relative h-[200px]">
+            <img
+              src="../../../assets/people.png"
+              class="absolute -right-6 -bottom-14 h-[320px] object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="relative text-white overflow-hidden">
+      <!-- BASE BACKGROUND -->
+      <div class="absolute inset-0 bg-[#0f2f31]"></div>
+      <!-- PATTERN IMAGE -->
+      <div class="absolute inset-0 opacity-[0.08]">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/055/932/816/small/dark-green-wave-background-with-simple-line-shapes-and-patterns-simple-green-wave-design-modern-geometric-shape-concept-eps10-vector.jpg"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <!-- GRADIENT BRAND OVERLAY -->
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-[#215E61]/90 via-[#0f2f31]/95 to-[#FE7F2D]/40"
+      ></div>
+      <!-- GLOW EFFECT -->
+      <div
+        class="absolute w-[500px] h-[500px] bg-[#FE7F2D]/20 blur-[140px] rounded-full bottom-[-200px] right-[-150px]"
+      ></div>
+      <!-- CONTENT -->
+      <div class="relative max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-4 gap-12">
+          <!-- LOGO -->
+          <div>
+            <div
+              class="w-36 h-14 bg-white/20 rounded mb-6 flex items-center justify-center p-1"
+            >
+              <img
+                src="../../../../assets/oerusin.png"
+                alt="Logo Oerusin"
+                class="h-48 w-40 object-contain"
+              />
+            </div>
+            <p class="text-gray-300 text-sm">
+              Solusi legalitas dan perizinan bisnis terpercaya untuk pertumbuhan
+              usaha Anda.
+            </p>
+          </div>
+          <!-- MENU -->
+          <div>
+            <h4 class="font-semibold mb-4">Layanan</h4>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li><a href="#" class="hover:text-white">Pendirian PT</a></li>
+              <li><a href="#" class="hover:text-white">Legalitas Usaha</a></li>
+              <li><a href="#" class="hover:text-white">Perizinan</a></li>
+              <li>
+                <a
+                  href="https://ahu.go.id/sabh/perseroan/pesannama"
+                  class="hover:text-white"
+                  >Cek Nama PT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- COMPANY -->
+          <div>
+            <h4 class="font-semibold mb-4">Perusahaan</h4>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li><a href="#">Tentang</a></li>
+              <li><a href="#">Artikel</a></li>
+              <li><a href="#">Partner</a></li>
+            </ul>
+          </div>
+          <!-- CONTACT -->
+          <div>
+            <div>
+              <h4 class="font-semibold mb-4">Kontak</h4>
+            </div>
+            <div class="flex gap-3 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Outline"
+                viewBox="0 0 24 24"
+                width="50"
+                height="50"
+                fill="#FE7F2D"
+                stroke-width="0.5"
+                stroke="#0f766e"
+              >
+                <path
+                  d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"
+                />
+                <path
+                  d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z"
+                />
+              </svg>
+              <p class="text-gray-300 text-sm">
+                Jl. Tebet Barat IX No.36, Tebet Bar., Kec. Tebet, Kota Jakarta
+                Selatan, Daerah Khusus Ibukota Jakarta 12810
+              </p>
+            </div>
+            <div class="flex gap-3 items-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Outline"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="#FE7F2D"
+              >
+                <path
+                  d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z"
+                />
+              </svg>
+              <p class="mt-3 text-gray-300 text-sm">hello@oerusin.id</p>
+            </div>
+            <div class="flex gap-3 items-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Layer_1"
+                data-name="Layer 1"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="#FE7F2D"
+              >
+                <path
+                  d="M13,1a1,1,0,0,1,1-1A10.011,10.011,0,0,1,24,10a1,1,0,0,1-2,0,8.009,8.009,0,0,0-8-8A1,1,0,0,1,13,1Zm1,5a4,4,0,0,1,4,4,1,1,0,0,0,2,0,6.006,6.006,0,0,0-6-6,1,1,0,0,0,0,2Zm9.093,10.739a3.1,3.1,0,0,1,0,4.378l-.91,1.049c-8.19,7.841-28.12-12.084-20.4-20.3l1.15-1A3.081,3.081,0,0,1,7.26.906c.031.031,1.884,2.438,1.884,2.438a3.1,3.1,0,0,1-.007,4.282L7.979,9.082a12.781,12.781,0,0,0,6.931,6.945l1.465-1.165a3.1,3.1,0,0,1,4.281-.006S23.062,16.708,23.093,16.739Zm-1.376,1.454s-2.393-1.841-2.424-1.872a1.1,1.1,0,0,0-1.549,0c-.027.028-2.044,1.635-2.044,1.635a1,1,0,0,1-.979.152A15.009,15.009,0,0,1,5.9,9.3a1,1,0,0,1,.145-1S7.652,6.282,7.679,6.256a1.1,1.1,0,0,0,0-1.549c-.031-.03-1.872-2.425-1.872-2.425a1.1,1.1,0,0,0-1.51.039l-1.15,1C-2.495,10.105,14.776,26.418,20.721,20.8l.911-1.05A1.121,1.121,0,0,0,21.717,18.193Z"
+                />
+              </svg>
+              <p class="mt-3 text-gray-300 text-sm">087811212001</p>
+            </div>
+          </div>
+        </div>
+        <!-- BOTTOM -->
+        <div
+          class="border-t border-white/10 mt-14 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-400"
+        >
+          <p>© 2026 Oerusin. All rights reserved.</p>
+          <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbar = document.getElementById("navbar");
+      const navMenu = document.getElementById("navMenu");
+      const navLogo = document.getElementById("navLogo");
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const sidebar = document.getElementById("sidebar");
+      const sidebarContent = document.getElementById("sidebarContent");
+      const closeSidebar = document.getElementById("closeSidebar");
+      const closeSidebarBtn = document.getElementById("closeSidebarBtn");
+
+      // Logic Sidebar
+      const openSidebar = () => {
+        sidebar.classList.remove("invisible", "opacity-0");
+        sidebarContent.classList.remove("translate-x-full");
+        document.body.style.overflow = "hidden"; // Lock scroll saat menu buka
+      };
+
+      const hideSidebar = () => {
+        sidebarContent.classList.add("translate-x-full");
+        setTimeout(() => {
+          sidebar.classList.add("invisible", "opacity-0");
+          document.body.style.overflow = "";
+        }, 300);
+      };
+
+      mobileMenuBtn.addEventListener("click", openSidebar);
+      closeSidebar.addEventListener("click", hideSidebar);
+      closeSidebarBtn.addEventListener("click", hideSidebar);
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("backdrop-blur-md", "bg-[#215E61]", "shadow-md");
+        } else {
+          navbar.classList.remove(
+            "backdrop-blur-md",
+            "bg-[#215E61]",
+            "shadow-md",
+          );
+          navMenu.classList.replace("text-gray-800", "text-white");
+          mobileMenuBtn.classList.replace("text-gray-800", "text-white");
+        }
+      });
+    });
+  </script>
+</html>

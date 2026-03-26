@@ -5,19 +5,19 @@
       "destination": "/pages/home.html"
     },
     {
-      "source": "/about",
+      "source": "/about.com",
       "destination": "/pages/about.html"
     },
     {
-      "source": "/contact",
+      "source": "/contact.com",
       "destination": "/pages/contact.html"
     },
     {
-      "source": "/service",
+      "source": "/service.com",
       "destination": "/pages/service.html"
     },
     {
-      "source": "/article",
+      "source": "/article.com",
       "destination": "/pages/article.html"
     },
     {
@@ -25,48 +25,52 @@
       "destination": "/pages/details/services/1.html"
     },
     {
-      "source": "/service/pt-perorangan",
+      "source": "/details/services/2.html",
       "destination": "/pages/details/services/2.html"
     },
     {
-      "source": "/service/pt-umkm",
+      "source": "/details/services/3.html",
       "destination": "/pages/details/services/3.html"
     },
     {
-      "source": "/service/pt-non-umkm",
+      "source": "/details/services/4.html",
       "destination": "/pages/details/services/4.html"
     },
     {
-      "source": "/service/pt-pma",
+      "source": "/details/services/5.html",
       "destination": "/pages/details/services/5.html"
     },
     {
-      "source": "/service/yayasan",
+      "source": "/details/services/6.html",
       "destination": "/pages/details/services/6.html"
     },
     {
-      "source": "/service/koperasi",
+      "source": "/details/services/7.html",
       "destination": "/pages/details/services/7.html"
     },
     {
-      "source": "/service/organisasi-perkumpulan",
+      "source": "/details/services/8.html",
       "destination": "/pages/details/services/8.html"
     },
     {
-      "source": "/service/laporan-pajak",
+      "source": "/details/services/9.html",
       "destination": "/pages/details/services/9.html"
     },
     {
-      "source": "/service/haki",
+      "source": "/details/services/10.html",
       "destination": "/pages/details/services/10.html"
     },
     {
-      "source": "/service/sbujk",
+      "source": "/details/services/11.html",
       "destination": "/pages/details/services/11.html"
     },
     {
-      "source": "/service/iso-9001",
+      "source": "/details/services/12.html",
       "destination": "/pages/details/services/12.html"
+    },
+    {
+      "source": "/details/services/13.html",
+      "destination": "/pages/details/services/13.html"
     }
   ]
 }

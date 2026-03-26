@@ -75,22 +75,18 @@
     {
       "source": "/details/articles/1.html",
       "destination": "/pages/details/articles/1.html"
-    }
     },
     {
       "source": "/details/articles/2.html",
       "destination": "/pages/details/articles/2.html"
-    }
     },
     {
       "source": "/details/articles/3.html",
       "destination": "/pages/details/articles/3.html"
-    }
     },
     {
       "source": "/details/articles/4.html",
       "destination": "/pages/details/articles/4.html"
-    }
     },
     {
       "source": "/details/articles/5.html",

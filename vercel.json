@@ -13,6 +13,10 @@
       "destination": "/pages/contact.html"
     },
     {
+      "source": "/service",
+      "destination": "/pages/service.html"
+    },
+    {
       "source": "/article",
       "destination": "/pages/article.html"
     },

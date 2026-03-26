@@ -1,0 +1,100 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/pages/home.html"
+    },
+    {
+      "source": "/about.html",
+      "destination": "/pages/about.html"
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/pages/contact.html"
+    },
+    {
+      "source": "/service.html",
+      "destination": "/pages/service.html"
+    },
+    {
+      "source": "/article.html",
+      "destination": "/pages/article.html"
+    },
+    {
+      "source": "/details/services/1.html",
+      "destination": "/pages/details/services/1.html"
+    },
+    {
+      "source": "/details/services/2.html",
+      "destination": "/pages/details/services/2.html"
+    },
+    {
+      "source": "/details/services/3.html",
+      "destination": "/pages/details/services/3.html"
+    },
+    {
+      "source": "/details/services/4.html",
+      "destination": "/pages/details/services/4.html"
+    },
+    {
+      "source": "/details/services/5.html",
+      "destination": "/pages/details/services/5.html"
+    },
+    {
+      "source": "/details/services/6.html",
+      "destination": "/pages/details/services/6.html"
+    },
+    {
+      "source": "/details/services/7.html",
+      "destination": "/pages/details/services/7.html"
+    },
+    {
+      "source": "/details/services/8.html",
+      "destination": "/pages/details/services/8.html"
+    },
+    {
+      "source": "/details/services/9.html",
+      "destination": "/pages/details/services/9.html"
+    },
+    {
+      "source": "/details/services/10.html",
+      "destination": "/pages/details/services/10.html"
+    },
+    {
+      "source": "/details/services/11.html",
+      "destination": "/pages/details/services/11.html"
+    },
+    {
+      "source": "/details/services/12.html",
+      "destination": "/pages/details/services/12.html"
+    },
+    {
+      "source": "/details/services/13.html",
+      "destination": "/pages/details/services/13.html"
+    },
+    {
+      "source": "/details/articles/1.html",
+      "destination": "/pages/details/articles/1.html"
+    }
+    },
+    {
+      "source": "/details/articles/2.html",
+      "destination": "/pages/details/articles/2.html"
+    }
+    },
+    {
+      "source": "/details/articles/3.html",
+      "destination": "/pages/details/articles/3.html"
+    }
+    },
+    {
+      "source": "/details/articles/4.html",
+      "destination": "/pages/details/articles/4.html"
+    }
+    },
+    {
+      "source": "/details/articles/5.html",
+      "destination": "/pages/details/articles/5.html"
+    }
+  ]
+}

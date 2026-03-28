@@ -1,0 +1,143 @@
+const translations = {
+    id: {
+        nav_home: "Home",
+        nav_about: "Tentang",
+        nav_services: "Layanan",
+        nav_article: "Artikel",
+        nav_contact: "Kontak Kami",
+        tentang_1: "Tentang Oerusin",
+        tentang_2: "Solusi Legalitas & Perizinan Bisnis yang Lebih Mudah",
+        tentang_3: "Oerusin membantu pelaku usaha dalam proses legalitas secara cepat, transparan, dan profesional tanpa proses yang rumit.",
+        history_title: "Perjalanan Oerusin",
+        history_2021: "Oerusin didirikan untuk membantu UMKM mengurus legalitas usaha.",
+        history_2023: "Mulai melayani ratusan perusahaan di berbagai sektor industri.",
+        history_2025: "Transformasi digital layanan legalitas berbasis teknologi.",
+        about_hero_title: "Tentang OERUSIN.ID",
+        about_hero_desc: "Mitra terpercaya dalam pengurusan legalitas dan perizinan bisnis di Indonesia.",
+        vision_title: "Visi",
+        vision_desc: "Menjadi platform legalitas bisnis terpercaya yang membantu pertumbuhan usaha di Indonesia.",
+        mission_title: "Misi",
+        mission_1: "✔ Memberikan layanan cepat & transparan",
+        mission_2: "✔ Mendukung UMKM berkembang legal",
+        mission_3: "✔ Memanfaatkan teknologi digital",
+        whatsapp: "Konsultasi WhatsApp",
+        cta_title: "Konsultasikan Legalitas Bisnis Anda Sekarang",
+        cta_btn_contact: "Hubungi Kami →",
+        cta_btn_service: "Lihat Layanan",
+        footer_tagline: "Solusi legalitas dan perizinan bisnis terpercaya untuk pertumbuhan usaha Anda.",
+        footer_menu_1: "Layanan",
+        footer_link_pt: "Pendirian PT",
+        footer_link_legal: "Legalitas Usaha",
+        footer_link_permit: "Perizinan",
+        footer_link_cek: "Cek Nama PT",
+        footer_menu_2: "Perusahaan",
+        footer_link_about: "Tentang",
+        footer_link_article: "Artikel",
+        footer_link_partner: "Partner",
+        footer_menu_3: "Kontak",
+        footer_copy: "© 2026 Oerusin. All rights reserved.",
+        footer_link_privacy: "Privasi",
+        footer_link_terms: "Syarat & Ketentuan",
+    },
+    en: {
+        nav_home: "Home",
+        nav_about: "About",
+        nav_services: "Services",
+        nav_article: "Article",
+        nav_contact: "Contact Us",
+        tentang_1: "About Oerusin",
+        tentang_2: "Easier Legality & Business Licensing Solutions",
+        tentang_3: "Oerusin helps business actors in the legal process quickly, transparently, and professionally without complicated processes.",
+        tentang_4: "Learn More",
+        history_title: "The Oerusin Journey",
+        history_2021: "Oerusin was founded to help MSMEs manage business legality.",
+        history_2023: "Started serving hundreds of companies across various industrial sectors.",
+        history_2025: "Digital transformation of technology-based legality services.",
+        about_hero_title: "About OERUSIN.ID",
+        about_hero_desc: "Your trusted partner in managing business legality and licensing in Indonesia.",
+        vision_title: "Vision",
+        vision_desc: "To be a trusted business legality platform that supports business growth in Indonesia.",
+        mission_title: "Mission",
+        mission_1: "✔ Providing fast & transparent services",
+        mission_2: "✔ Supporting MSMEs to grow legally",
+        mission_3: "✔ Leveraging digital technology",
+        whatsapp: "WhatsApp consultation",
+        cta_title: "Consult Your Business Legality Now",
+        cta_btn_contact: "Contact Us →",
+        cta_btn_service: "View Services",
+        footer_tagline: "Trusted business legality and licensing solutions for your business growth.",
+        footer_menu_1: "Services",
+        footer_link_pt: "PT Incorporation",
+        footer_link_legal: "Business Legality",
+        footer_link_permit: "Licensing",
+        footer_link_cek: "Check PT Name",
+        footer_menu_2: "Company",
+        footer_link_about: "About Us",
+        footer_link_article: "Articles",
+        footer_link_partner: "Partners",
+        footer_menu_3: "Contact",
+        footer_copy: "© 2026 Oerusin. All rights reserved.",
+        footer_link_privacy: "Privacy",
+        footer_link_terms: "Terms & Conditions"
+    },
+    cn: {
+        nav_home: "首页",
+        nav_about: "关于我们",
+        nav_services: "服务",
+        nav_article: "文章",
+        nav_contact: "联系我们",
+        tentang_1: "关于奥鲁辛",
+        tentang_2: "更便捷的合法性和商业许可解决方案",
+        tentang_3: "Oerusin 帮助企业参与者快速、透明、专业地处理法律程序，无需复杂的流程。",
+        tentang_4: "了解更多",
+        history_title: "Oerusin 的发展历程",
+        history_2021: "Oerusin 成立，旨在帮助中小微企业办理业务合法化。",
+        history_2023: "开始为各个工业领域的数百家公司提供服务。",
+        history_2025: "基于技术的法律服务数字化转型。",
+        about_hero_title: "关于 OERUSIN.ID",
+        about_hero_desc: "您在印度尼西亚办理业务合法性和许可方面值得信赖的合作伙伴。",
+        vision_title: "愿景",
+        vision_desc: "成为值得信赖的业务合法化平台，助力印度尼西亚的企业增长。",
+        mission_title: "使命",
+        mission_1: "✔ 提供快速且透明的服务",
+        mission_2: "✔ 支持中小微企业合法发展",
+        mission_3: "✔ 利用数字技术",
+        whatsapp: "WhatsApp咨询",
+        cta_title: "立即咨询您的业务合法性",
+        cta_btn_contact: "联系我们 →",
+        cta_btn_service: "查看服务",
+        footer_tagline: "为您业务增长提供值得信赖的法律和许可解决方案。",
+        footer_menu_1: "服务项目",
+        footer_link_pt: "成立有限责任公司 (PT)",
+        footer_link_legal: "业务合法化",
+        footer_link_permit: "许可申请",
+        footer_link_cek: "核名查询",
+        footer_menu_2: "公司信息",
+        footer_link_about: "关于我们",
+        footer_link_article: "文章咨询",
+        footer_link_partner: "合作伙伴",
+        footer_menu_3: "联系方式",
+        footer_copy: "© 2026 Oerusin. 版权所有。",
+        footer_link_privacy: "隐私政策",
+        footer_link_terms: "服务条款"
+    }
+};
+
+function switchLanguage(lang) {
+    // Simpan pilihan bahasa ke localStorage agar tidak reset saat pindah halaman
+    localStorage.setItem('selectedLang', lang);
+
+    // Cari semua elemen yang punya atribut data-key
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[lang][key]) {
+            element.innerText = translations[lang][key];
+        }
+    });
+}
+
+// Jalankan fungsi saat halaman dimuat
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('selectedLang') || 'id';
+    switchLanguage(savedLang);
+});

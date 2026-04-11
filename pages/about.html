@@ -709,7 +709,7 @@ Tebet Barat, Kota Jakarta
     const videoPlayer = document.getElementById("videoPlayer");
 
     // Daftar video yang ingin diputar
-    const videoSources = ["../assets/video.mp4", "../assets/video1.mp4"];
+    const videoSources = ["../assets/video1.mp4", "../assets/video1.mp4"];
 
     let currentVideoIndex = 0;
 
@@ -718,7 +718,7 @@ Tebet Barat, Kota Jakarta
       // Pindah ke index berikutnya, jika sudah di akhir balik ke 0
       currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
 
-      // Ganti source video
+      // Ganti source 
       videoPlayer.src = videoSources[currentVideoIndex];
 
       // Putar video baru
